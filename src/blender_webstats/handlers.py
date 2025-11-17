@@ -9,8 +9,8 @@ from typing import Optional, List, Tuple
 
 import bpy.types
 
-from blender_webstats import g_render_state
-from blender_webstats.util import log
+from . import g_render_state
+from .util import log
 
 
 def register_handlers() -> None:

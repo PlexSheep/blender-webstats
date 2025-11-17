@@ -9,7 +9,7 @@ from typing import Dict, Any, Optional
 import bpy
 from bpy.types import Panel, Context, UILayout
 
-from blender_webstats.state import RenderState
+from .state import RenderState
 
 
 class WEBSTATS_PT_main_panel(Panel):

@@ -13,7 +13,7 @@ from . import operators
 from . import ui
 from . import estimate
 
-from blender_webstats.util import log
+from .util import log
 from typing import Tuple, Type
 
 import bpy
@@ -54,7 +54,7 @@ def register() -> None:
     for cls in _classes:
         bpy.utils.register_class(cls)
 
-    handlers.register_handlers(g_render_state)
+    handlers.register_handlers()
 
     log("Addon registered")
 

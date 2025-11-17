@@ -8,9 +8,9 @@ from typing import Set, Dict, Any
 
 from bpy.types import Operator, Context
 
-from blender_webstats.util import log, log_divider
-from blender_webstats.state import RenderState
-from blender_webstats import g_render_state
+from .util import log, log_divider
+from .state import RenderState
+from . import g_render_state
 
 
 class WEBSTATS_OT_start_server(Operator):
